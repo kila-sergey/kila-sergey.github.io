@@ -124,7 +124,7 @@
             </div>
           </div>
           <h2 class="title" id="trigger-5"><span class="title--red">Готово! </span><span>Теперь Ваши деньги<br/>работают на вас!</span></h2>
-          <form class="form" action="#" method="post" id="form">
+          <form class="form" novalidate id="form">
             <div class="form-success hidden"><span>Ваша заявка отправлена</span>
               <div class="form-success-icon">
                 <svg class="icon icon-ok ">
@@ -212,66 +212,7 @@
           <div class="bottom-line-wrap"><a class="bottom-line__link" href="/">Посмотреть адреса отделений на карте</a><a class="bottom-line__link" href="/">Перейти в интернет-банк MMBANK-online </a><a class="bottom-line__link" href="/">Скачать мобильное приложение для iOS,  дляAndroid</a></div>
         </div>
       </div>
-    </div><script>
-	function sendForm() {
-			$.ajax({
-				type: "post",
-				url: "url.php",
-				data: $('#form').serializeArray(),
-				dataType: "json",
-				success: function (data) {
-					console.log(data);
-					$('.form-box').css({
-						'visibility': 'hidden'
-					});
-					var err = data;
-					if (err == '1') {
-						$('.form-success').removeClass('hidden');
-						$('#name').val('');
-						$('#tel').val('');
-						$('#email').val('');
-						$('#name').attr('style','');
-						$('#tel').attr('style','');
-						$('.requirements').css({'opacity':'0'})
-					} else {
-						$('.form-box').css({
-							'visibility': 'visible'
-						});
-						if ($('#name').val().length == 0 && $('#tel').val().length == 0) {
-							$('#name').css({
-								'border-bottom': '2px solid red'
-							});
-							$('.requirements--name').css({
-								'opacity': '1'
-							});
-							$('#tel').css({
-								'border-bottom': '2px solid red'
-							});
-							$('.requirements--tel').css({
-								'opacity': '1'
-							});
-						}
-						else if($('#name').val().length == 0){
-							$('#name').css({
-								'border-bottom': '2px solid red'
-							});
-							$('.requirements--name').css({
-								'opacity': '1'
-							});
-						}
-						else if($('#tel').val().length == 0){
-							$('#tel').css({
-								'border-bottom': '2px solid red'
-							});
-							$('.requirements--tel').css({
-								'opacity': '1'
-							});
-						}
-					}
-				}
-			});
-		}
-</script>
+    </div>
     <script src="static/js/libs/jquery.min.js"></script>
     <script src="static/js/libs/TimelineMax.min.js"></script>
     <script src="static/js/libs/TweenMax.min.js"></script>

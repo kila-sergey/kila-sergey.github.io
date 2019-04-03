@@ -15,11 +15,13 @@ function coin1Desktop() {
 			y: 0
 		})
 		.to('.coin', 3.5, {
-			y: 340
+			y: 440,
+			opacity:0
 		})
 		.to('.coin', .5, {
 			scale: 0
 		})
+
 
 	var scene1 = new ScrollMagic.Scene({
 			triggerElement: '.button',
@@ -303,18 +305,36 @@ $("#to-form").on("click", function (event) {
 });
 
 
-$('#name').keyup(function(){
-	if($('#name').val().length!=0){
-		$('.requirements--name').css({'opacity':'0'});
-		$('#name').css({'border-bottom':'2px solid #38A512'})
-	}
-})
+function checkRequired() {
+	$('.required_input').on('keyup change', function () {
+		if ($(this).val().length > 0) {
+			$(this).removeClass('error');
+			$(this).addClass('success');
+		} else if ($(this).val().length == 0) {
+			$(this).removeClass('success');
+			$(this).removeClass('error');
+		}
+	})
+}
 
-$('#tel').keyup(function(){
-	if($('#tel').val().length!=0){
-		$('.requirements--tel').css({'opacity':'0'});
-		$('#tel').css({'border-bottom':'2px solid #38A512'})
-	}
+// Validate inputs type=number
+function num__inset() {
+	$('.num__inset').bind("change keyup input click", function () {
+		if (this.value.match(/[^0-9^+]/g)) {
+			this.value = this.value.replace(/[^0-9]/g, '');
+		}
+	});
+}
+
+checkRequired();
+num__inset();
+
+$('#form-button').click(function(e){
+	e.preventDefault();
+	$('.form-success').removeClass('hidden');
+	$('.form-box').css({
+		'visibility': 'hidden'
+	});
 })
 
 $('.form-success-close').click(function () {
