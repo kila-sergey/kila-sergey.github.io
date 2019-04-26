@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Aspire</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="video-popup-container">
+        <div class="video-popup-el" id="frame"></div>
+        <div class="video-popup-close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="form-popup-container">
+        <div class="form-popup-wrapper">
+          <div class="form-popup-star scene"><img src="./static/img/content/star-1.png" alt="" data-depth-x="2" data-depth-y="-2" data-friction-x="0.1"></div>
+          <div class="form-popup-cloud scene"><img src="./static/img/content/form-cloud.svg" alt="" data-depth-x="-2" data-depth-y="2" data-friction-x="0.1"></div>
+          <div class="form-popup-close"><i class="fas fa-times"></i></div>
+          <div class="form-success hidden">Спасибо за заявку!<br> Мы свяжемся с вами в ближайшее время.</div>
+          <form class="form" action="">
+            <div class="form-title">Пожалуйста заполните форму
+              <div class="title-bg title-bg--centertop"><img src="./static/img/general/title-bg-5.png" alt=""></div>
+            </div>
+            <div class="form-subtitle"> Мы свяжемся с вами и расскажем как оплатить майку</div>
+            <div class="form-inputs">
+              <div class="form-input">
+                <input class="required-input" type="text" placeholder="Ваше ФИО">
+              </div>
+              <div class="form-input">
+                <input class="required-input email-check" type="text" placeholder="Ваш E-mail">
+              </div>
+              <div class="form-input">
+                <input class="required-input phone-check" type="tel" placeholder="Ваш телефон">
+              </div>
+            </div>
+            <button class="bubbly-button bubbly-button--lg" type="submit" id="form-btn">Заказать</button>
+          </form>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header-wrap"><a class="logo" href="/"><img src="./static/img/content/logo.svg" alt=""></a>
+            <div class="social"><a class="social-item social-item--insta" href="/"><i class="fab fa-instagram"></i></a><a class="social-item social-item--vk" href="/"><i class="fab fa-vk"></i></a></div>
+          </div>
+        </div>
+      </header>
+      <div class="banner">
+        <div class="bg-bottom"><img src="./static/img/general/bg-bottom.png" alt=""></div>
+        <div class="star-3 scene"><img src="./static/img/content/star-rot.svg" alt="" data-depth-x="2.5" data-depth-y="-2.5" data-friction-x="0.1"></div>
+        <div class="snake-block">
+          <div class="snake"><img src="./static/img/content/snake.png" alt=""></div>
+          <div class="star-1 scene"><img src="./static/img/content/star-1.png" alt="" data-depth-x="3" data-depth-y="-2" data-friction-x="0.075"></div>
+          <div class="star-2 scene"><img src="./static/img/content/star-2.png" alt="" data-depth="2.5"></div>
+          <div class="star-pink-1 scene"><img src="./static/img/content/star-pink.svg" alt="" data-depth-x="-3" data-depth-y="-2" data-friction-x="0.2"></div>
+        </div>
+        <div class="container">
+          <div class="banner__title"><img src="./static/img/content/title-1.png" alt=""></div>
+          <div class="banner__text">
+            <p><span class="colored">Aspire </span>– волонтерский благотворительный проект. Мы активно реализуем различные благотворительные акции, чтобы помочь нуждающимся детям. </p>
+          </div>
+        </div>
+      </div>
+      <div class="info" id="trigger-1">
+        <div class="container">
+          <div class="info-wrap">
+            <div class="fish"><img src="./static/img/content/fish.svg" alt=""></div>
+            <div class="info-about">
+              <h2 class="info__title">О проекте
+                <div class="title-bg"><img src="./static/img/general/title-bg-2.png" alt=""></div>
+                <div class="insect"><img src="./static/img/content/insect.svg" alt=""></div>
+              </h2>
+              <div class="info__text">
+                <p>Поддержите наш очередной благотворительны проект <span class="bold">#майкаполюбойцене. </span>Купите майку по ЛЮБОЙ цене и помогите детям с различными заболеваниями.</p>
+                <p>Принт на майки разработал специально для нашей акции известный белорусский <span class="bold">дизайнер Иван Айплатов.</span></p>
+                <p>Все вырученные средства будут переведены в <span class="bold">помощь подопечным детям благотворительного фонда «Шанс» (chance.by).</span></p>
+              </div>
+            </div>
+            <div class="info-video">
+              <div class="info-video__title">Благотворительная акция<br>#геномбегом
+                <div class="arrow-left"><img src="./static/img/content/icons/arrow-left.svg" alt=""></div>
+                <div class="arrow-right"><img src="./static/img/content/icons/arrow-right.svg" alt=""></div>
+              </div><a class="info-video-el video" href="#" data-url="NMnt1sjvOAo">
+                <div class="info-video-el__bg"><img src="./static/img/general/video-bg.png" alt=""></div>
+                <div class="info-video-el__img"><img src="./static/img/content/video-img.png" alt="">
+                  <div class="info-video-el__play"><img src="./static/img/content/icons/play.svg" alt=""></div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shirts" id="trigger-2">
+        <div class="bg-top"><img src="./static/img/general/bg-top.png" alt=""></div>
+        <div class="bg-bottom"><img src="./static/img/general/bg-bottom.png" alt=""></div>
+        <div class="star-4 scene"><img src="./static/img/content/star-2.png" alt="" data-depth-x="1.5" data-depth-y="-2.5" data-friction-x="0.1"></div>
+        <div class="star-5 scene"><img src="./static/img/content/star-2.png" alt="" data-depth-x="-2.5" data-depth-y="1.5" data-friction-x="0.1"></div>
+        <div class="star-9 scene"><img src="./static/img/content/star-1.png" alt="" data-depth-x="-2.5" data-depth-y="-2.5" data-friction-x="0.1"></div>
+        <div class="cat"><svg width="318" height="444" viewBox="0 0 318 444" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path  id="cat-5" d="M109.065 233.544C108.26 210.614 110.024 183.657 135.042 176.954C157.184 171.021 170.511 199.658 175.349 217.713C179.178 232.001 167.646 232.736 156.133 235.821C142.675 239.427 127.76 231.826 116.604 224.08"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path  id="cat-6" d="M235.631 201.411C234.039 182.463 238.552 161.899 257.236 150.709C271.321 142.272 282.754 162.1 289.941 170.736C309.467 194.2 259.095 202.033 244.422 205.965"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-8" d="M256.703 170.388C267.839 196.29 269.193 176.667 256.072 168.033" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-7" d="M143.88 203.972C142.129 208.595 136.523 216.791 142.22 219.809C145.179 221.377 151.199 220.955 151.329 217.368C151.57 210.759 145.797 210.337 140.621 207.061"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-9" d="M205.194 241.361C212.304 240.251 240.038 227.246 238.979 236.951C238.293 243.229 238.468 255.031 231.7 256.845C221.019 259.707 208.577 253.985 205.759 243.468"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-10"d="M226.735 258.174C230.619 272.666 237.625 289.464 236.153 303.659C235.171 313.135 232.627 321.824 226.007 326.869C216.773 333.906 214.893 337.75 226.808 334.558"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-11" d="M239.045 301.893C244.692 304.07 275.992 328.543 276.379 309.62" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path  id="cat-3" d="M119.274 140.039C122.027 130.521 152.407 79.4481 158.23 101.18C161.838 114.646 158.254 104.931 166.502 100.833C168.738 99.7226 169.422 107.061 170.35 108.029C173.393 111.201 188.401 99.8402 190.945 98.3974C204.725 90.5823 213.666 88.3412 228.257 86.156"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-2" d="M229.185 89.6187C247.594 61.8903 264.942 36.8744 289.406 13.8852C298.147 5.67058 297.338 16.2939 298.415 24.7929C301.412 48.4455 321.291 117.394 315.118 94.3584"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-1" d="M118.21 136.064C90.1586 143.58 64.656 135.779 35.9098 132.614C29.9422 131.957 2.11225 129.017 16.2939 140.735C35.2022 156.359 46.0696 177.671 61.4177 196.411C66.0129 202.022 79.7709 221.151 88.2635 218.875"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path  id="cat-4" d="M82.114 235.316C70.6656 259.361 62.7942 282.894 61.2332 309.596C60.6172 320.134 63.321 336.576 74.525 320.241C82.6148 308.446 78.8864 315.177 78.1707 326.574C77.7781 332.825 76.6567 345.918 81.1385 351.156C83.6476 354.089 93.3936 346.33 96.5506 346.337C107.407 346.36 109.687 367.365 114.558 374.062C121.53 383.648 137.81 377.59 147.87 385.135C160.337 394.485 177.989 397.385 193.242 400.7C211.547 404.677 227.173 404.986 245.418 400.098C264.616 394.954 277.22 390.551 291.587 376.555C300.507 367.865 306.902 357.067 312.955 346.693C318.976 336.374 322.9 324.968 335.771 331.063C349.999 337.801 342.813 311.518 347.898 306.711C351.835 302.989 357.397 305.984 360.816 302.974C365.95 298.455 363.833 279.324 363.931 273.038C364.209 255.123 380.051 269.86 380.866 252.087C381.444 239.5 378.116 227.946 377.462 215.484C377.157 209.678 386.055 214.602 387.472 211.285C392.007 200.669 377.945 168.414 370.926 160.963C366.309 156.062 364.689 149.339 359.64 144.816C353.002 138.87 345.664 133.723 338.954 127.877C327.693 118.065 320.323 107.054 319.397 92.2925"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-12" d="M272.628 251.754C293.871 231.774 316.702 214.684 340.582 198.283" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-13" d="M285.064 254.298C303.423 252.901 320.52 254.434 338.824 257.525" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-14" d="M285.459 277.703C297.567 286.365 306.64 293.986 320.223 297.774" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path  id="cat-15" d="M157.475 282.61C138.73 283.425 116.839 282.699 102.64 297.303" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-16" d="M161.884 299.061C145.9 311.985 135.288 325.665 126.832 343.716" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-17" d="M178.728 318.055C175.819 325.934 171.263 334.061 173.639 342.928" stroke="#FAFAFA" stroke-width="5" stroke-linecap="round"
+	   stroke-linejoin="round" />
+	<path id="cat-18" d="M277.508 50.6231C272.014 64.7987 266.226 80.1548 266.818 97.3352C267.18 107.838 276.221 92.2828 278.063 91.329C279.264 90.7075 286.008 108.99 289.85 111.965"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+	<path id="cat-19" d="M61.893 167.168C76.8834 166.157 90.545 169.165 103.927 177.903C109.629 181.627 106.336 186.115 101.604 187.382C97.3267 188.529 91.8576 189.013 87.9097 191.195C82.2096 194.346 87.2493 200.325 91.5198 200.37"
+	   stroke="#FAFAFA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+        </div>
+        <div class="pictures">
+          <div class="pictures-flower"><img src="./static/img/content/flower.svg" alt=""></div>
+          <div class="pictures-chicken"><img src="./static/img/content/chicken.svg" alt=""></div>
+        </div>
+        <div class="container">
+          <h2 class="shirts-title">Майки помощи
+            <div class="title-bg"><img src="./static/img/general/title-bg.png" alt=""></div>
+          </h2>
+          <div class="shirts-block">
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (муж)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>M</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (муж)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>L</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (муж)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>XL</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (жен)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>S</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (жен)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>M</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+            <div class="shirts-item"><a class="shirts-item__img form-popup-open" href="/">
+                <div class="shirts-item__img-bg"><img src="./static/img/content/shirt-bg.svg" alt=""></div>
+                <div class="shirts-item__img-shirt"><img src="./static/img/content/shirt.png" alt=""></div></a>
+              <div class="shirts-item__title">Майка помощи (жен)</div>
+              <div class="shirts-item__properties">
+                <p> <span class="bold">Цвет: </span>белый</p>
+                <p> <span class="bold">Материал: </span>хлопок 100%</p>
+                <p> <span class="bold">Принт: </span>Иван Айплатов</p>
+                <p> <span class="bold">Размер: </span>L</p>
+                <p> <span class="bold">Цена: </span>Любая</p>
+              </div>
+              <div class="shirts__btn form-popup-open">
+                <button class="bubbly-button bubbly-button--sm">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news" id="trigger-3">
+        <div class="house"><svg width="379" height="383" viewBox="0 0 379 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path id="house-5" d="M159.627 95.4922C147.799 116.952 129.212 133.923 114.544 153.484C108.017 162.188 97.3491 169.717 91.7122 178.615C90.4409 180.622 112.398 178.376 114.125 178.371C132.377 178.322 153.598 179.955 171.363 183.86C176.66 185.024 187.233 189.022 191.82 183.849C192.051 183.589 182.713 165.117 182.005 163.228C177.114 150.171 172.535 134.417 165.026 122.695C162.185 118.26 158.667 115.695 157.559 110.278C156.97 107.4 157.206 105.27 155.906 103.017" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-4" d="M154.742 101.001C174.355 99.5499 194.468 98.1915 213.445 93.2467C223.87 90.5305 220.329 98.5996 222.469 105.513C226.42 118.28 230.398 131.612 236.964 143.296C239.62 148.022 245.88 163.863 251.843 166.222C267.547 172.434 233.936 175.508 230.256 175.399C223.417 175.196 214.492 176.286 207.805 177.905C204.488 178.709 198.866 176.642 196.963 178.788" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-7" d="M109.041 182.501C103.15 198.084 100.977 213.331 100.765 229.997C100.741 231.942 100.191 268.678 103.946 265.128C119.615 250.314 140.345 249.699 160.731 246.159C171.613 244.269 186.224 246.076 178.916 233.419C170.934 219.593 172.943 205.997 173.193 191.168" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-8" d="M178.329 241.973C198.934 240.534 219.297 230.584 239.693 226.41C241.356 226.07 258.23 223.153 257.386 221.871C253.146 215.432 250.284 208.797 248.549 201.133C246.479 191.992 247.588 180.662 240.556 175.128" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path  id="house-2" d="M184.364 73.1446C182.722 79.2701 181.081 85.3956 179.44 91.5212C178.27 95.8862 177.415 96.5129 182.005 94.6705" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path  id="house-3" d="M183.511 76.3251C186.722 74.9951 195.978 69.8108 199.838 71.2305C200.738 71.5617 196.915 83.5508 196.617 84.6659C195.711 88.0461 192.022 95.681 194.727 98.0793" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path  id="house-1" d="M189.789 59.2581C191.61 52.462 192.13 41.7441 200.429 40.0459C207.01 38.6992 215.478 39.461 218.403 46.4718C219.285 48.5856 217.811 55.4965 219.062 52.1405C222.362 43.2869 236.031 38.6567 244.431 43.6925C248.708 46.2572 245.899 53.408 244.939 56.991C244.063 60.2609 249.155 52.6013 252.552 51.5502C263.029 48.3078 284.303 51.4407 271.548 65.8252C268.531 69.2278 267.238 68.0925 268.716 64.0248C270.811 58.2605 276.194 55.8332 282.189 55.7983C286.746 55.7718 297.474 57.3583 297.433 63.5761C297.408 67.3739 292.312 75.094 296.104 71.3635C303.626 63.9628 320.054 62.9078 316.454 76.3428C316.064 77.7999 317.518 73.382 318.651 72.3862C322.745 68.7881 329.922 70.4538 334.69 71.1916C343.57 72.5657 343.898 75.0311 343.537 83.4101" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-11" d="M125.538 222.714C123.376 230.78 122.874 239.018 120.736 246.995" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-12" d="M121.931 223.453C124.283 221.773 152.101 210.513 150.358 219.138C148.799 226.854 146.802 236.263 150.754 243.107" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-6" d="M136.335 150.612C131.15 155.843 124.36 164.447 135.254 167.367C141.87 169.139 144.986 166.663 147.448 160.028C151.523 149.043 153.742 150.864 145.43 142.822C138.38 136.001 130.359 147.826 127.105 153.252" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-9" d="M185.801 201.364C184.501 204.651 179.305 215.96 185.074 218.214C189.316 219.871 195.224 215.697 199.63 215.486C204.377 215.258 211.23 216.471 209.134 209.699C208.297 206.994 204.069 195.128 202.132 197.312C198.62 201.273 189.763 202.612 184.949 204.545" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-10" d="M222.72 190.803C220.42 196.259 212.784 205.981 221.639 207.558C225.458 208.238 227.652 205.259 231.099 204.412C232.52 204.062 238.936 205.909 239.33 204.439C240.486 200.127 237.214 196.049 237.749 191.611C238.078 188.877 225.748 193.635 223.458 194.41" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-13" d="M253.133 210.883C254.32 206.452 255.481 193.545 259.073 190.128C260.334 188.928 268.711 199.772 270.208 200.876C271.474 201.81 277.29 209.098 278.38 205.717C280.169 200.163 280.711 194.004 279.65 188.255C276.824 172.956 291.179 196.987 295.154 200.364C298.029 202.806 300.381 178.258 302.108 174.766C302.853 173.258 315.433 203.706 318.096 196.379C320.057 190.983 319.87 184.455 321.387 178.796C324.102 168.662 320.477 176.422 321.974 180.847C322.621 182.761 327.793 194.279 331.057 192.182C335.024 189.633 333.843 178.519 336.281 174.453C337.295 172.762 339.897 185.144 340.626 186.507C342.642 190.274 343.586 194.492 347.219 196.891" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	<path id="house-14" d="M97.7033 262.981C96.3488 260.699 86.0483 242.153 81.0617 245.928C77.6127 248.539 76.9405 257.775 75.8934 261.683C75.1086 264.611 72.8634 276.785 72.5238 276.025C69.3723 268.978 66.7237 260.182 62.2691 253.866C58.3094 248.251 55.4932 261.069 55.5063 262.848C55.5149 264.014 60.7807 280.155 57.4896 279.477C49.5203 277.837 40.8621 241.539 37.533 265.608C36.6171 272.229 40.1941 278.128 39.0301 284.758C38.492 287.823 41.0524 290.589 37.8279 285.004C33.8596 278.131 29.464 271.399 25.7035 264.521C22.4416 258.555 19.1118 275.156 19.6661 277.865C20.7163 282.997 19.7969 290.443 21.3307 294.977C23.5603 301.568 16.8139 281.721 13.335 275.695C8.91708 268.043 7.4221 287.029 7.63362 288.845C8.24744 294.114 7.71866 303.244 11.1125 306.253" stroke="#00B269" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+	</svg>
+        </div>
+        <div class="container">
+          <h2 class="news-title">Новости
+            <div class="title-bg"><img src="./static/img/general/title-bg-3.png" alt=""></div>
+          </h2>
+          <div class="news-block">
+            <div class="news-item"><a class="news-item__img" href="newspage.html"><img src="./static/img/content/news-1.png" alt=""></a><a class="news-item__title" href="newspage.html">Благотворительная акция #геномбегом</a>
+              <div class="news-item__text">9 сентября 2018 на Минском полумарофоне мы организовали благотворительный забег <span class="bold">#геномбегом</span></div>
+            </div>
+            <div class="news-item"><a class="news-item__img" href="newspage.html"><img src="./static/img/content/news-2.png" alt=""></a><a class="news-item__title" href="newspage.html">Благотворительная акция для детского дома в Ждановичах</a>
+              <div class="news-item__text">04.06.2017 прошел благотворительный ультрамарафон от Минска до Молодечно. Весь путь составил <span class="bold">70 км и занял 7 ч. 15 мин.</span></div>
+            </div>
+            <div class="news-item"><a class="news-item__img" href="newspage.html"><img src="./static/img/content/news-1.png" alt=""></a><a class="news-item__title" href="newspage.html">Благотворительная акция #геномбегом</a>
+              <div class="news-item__text">9 сентября 2018 на Минском полумарофоне мы организовали благотворительный забег <span class="bold">#геномбегом</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="friends" id="trigger-4">
+        <div class="bg-top"><img src="./static/img/general/bg-top.png" alt=""></div>
+        <div class="sun scene"><img src="./static/img/content/sun.svg" alt="" data-depth-x="2.5" data-depth-y="-2.5" data-friction-x="0.1"></div>
+        <div class="star-6 scene"><img src="./static/img/content/star-2.png" alt="" data-depth-x="-2.5" data-depth-y="3.5" data-friction-x="0.5"></div>
+        <div class="star-7 scene"><img src="./static/img/content/star-1.png" alt="" data-depth-x="2" data-depth-y="2.5" data-friction-x="0.5"></div>
+        <div class="star-8 scene"><img src="./static/img/content/star-1.png" alt="" data-depth-x="-3.5" data-depth-y="3.5" data-friction-x="0.5"></div>
+        <div class="container">
+          <h2 class="friends-title">Наши друзья
+            <div class="title-bg title-bg--center"><img src="./static/img/general/title-bg.png" alt=""></div>
+          </h2>
+          <div class="friends-box">
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-6.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-2.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-3.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-4.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-5.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-1.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-7.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-8.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-9.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-10.png" alt=""></a></div>
+            <div class="friends-item"><a class="min" href="/"><img src="./static/img/content/friends/friend-11.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-12.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-13.png" alt=""></a></div>
+            <div class="friends-item friends-item--twice"><a href="/"><img src="./static/img/content/friends/friend-14.png" alt=""></a><a href="/"><img src="./static/img/content/friends/friend-15.png" alt=""></a></div>
+            <div class="friends-item friends-item--twice"><a class="min" href="/"><img src="./static/img/content/friends/friend-16.png" alt=""></a><a class="min" href="/"><img src="./static/img/content/friends/friend-17.png" alt=""></a></div>
+            <div class="friends-item friends-item--twice"><a href="/"><img src="./static/img/content/friends/friend-18.png" alt=""></a><a class="min" href="/"><img src="./static/img/content/friends/friend-19.png" alt=""></a></div>
+            <div class="friends-item"><a href="/"><img src="./static/img/content/friends/friend-20.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-wrap"><a class="logo" href="/"><img src="./static/img/content/logo-blue.svg" alt=""></a>
+            <div class="social social--footer"><a class="social-item social-item--insta" href="/"><i class="fab fa-instagram"></i></a><a class="social-item social-item--vk" href="/"><i class="fab fa-vk"></i></a></div>
+            <div class="copyright">Разработка сайта - <a href="https://www.medialine.by/services/develop/">Медиа Лайн</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/libs/jquery.min.js"></script>
+    <script src="static/libs/jquery.inputmask.bundle.js"></script>
+    <script src="static/libs/TimelineMax.min.js"></script>
+    <script src="static/libs/TweenMax.min.js"></script>
+    <script src="static/libs/DrawSVGPlugin.min.js"></script>
+    <script src="static/libs/ScrollMagic.js"></script>
+    <script src="static/libs/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="static/libs/swiper.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+  </body>
+</html>
