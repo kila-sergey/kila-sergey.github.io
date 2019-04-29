@@ -537,7 +537,7 @@ $(document).ready(function () {
 
 	function parallaxStars() {
 		var scene = document.querySelectorAll('.scene');
-		scene.forEach(element => {
+		scene.forEach(function(element) {
 			var parallaxInstance = new Parallax(element);
 		});
 	}
@@ -566,25 +566,26 @@ $(document).ready(function () {
 
 	// Popup-video
 	let popup = document.querySelectorAll('.video-popup-container');
+	let popupEl=document.querySelector('.video-popup-el');
 	let videos = document.querySelectorAll('.video');
 
 	function openModal() {
-		popup.forEach(item => {
+		popup.forEach(function(item){
 			item.classList.add('opened');
 		})
 		player.stopVideo();
 	}
 
 	function closeModal() {
-		popup.forEach(item => {
+		popup.forEach(function(item) {
 			item.classList.remove('opened');
 		})
 		player.stopVideo();
 	}
 
 	function bindModal(cards) {
-		cards.forEach(item => {
-			item.addEventListener('click', (e) => {
+		cards.forEach(function(item){
+			item.addEventListener('click', function(e) {
 				e.preventDefault();
 				const id = item.getAttribute('data-url');
 				loadVideo(id);
@@ -594,31 +595,14 @@ $(document).ready(function () {
 	};
 	bindModal(videos);
 
-	popup.forEach(item => {
-		item.addEventListener('click', (e) => {
+	popup.forEach(function(item){
+		item.addEventListener('click', function(e) {
 			if (!e.target.classList.contains('video-popup-el')) {
 				closeModal();
 			}
 		});
 	})
 
-	function createVideo() {
-		var tag = document.createElement('script');
-
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-		setTimeout(() => {
-			player = new YT.Player('frame', {
-				height: '100%',
-				width: '100%',
-				videoId: 'NMnt1sjvOAo'
-			});
-		}, 400);
-	}
-
-	createVideo();
 
 	function loadVideo(id) {
 		player.loadVideoById({
@@ -674,7 +658,7 @@ $(document).ready(function () {
 	formStart();
 
 	function openFormPopup() {
-		formPopup.forEach(item => {
+		formPopup.forEach(function(item){
 			item.classList.add('opened');
 		})
 		setTimeout(formAnimateOpen, 200);
@@ -684,15 +668,15 @@ $(document).ready(function () {
 		formAnimateClose();
 		formReset();
 		setTimeout(function () {
-			formPopup.forEach(item => {
+			formPopup.forEach(function(item){
 				item.classList.remove('opened');
 			})
 		}, 500)
 	}
 
 	function bindFormPopup(items) {
-		items.forEach(item => {
-			item.addEventListener('click', (e) => {
+		items.forEach(function(item){
+			item.addEventListener('click', function(e) {
 				e.preventDefault();
 				openFormPopup();
 			})
@@ -700,8 +684,8 @@ $(document).ready(function () {
 	}
 	bindFormPopup(popupLinks);
 
-	formPopup.forEach(item => {
-		item.addEventListener('click', (e) => {
+	formPopup.forEach(function(item){
+		item.addEventListener('click', function(e){
 			if (e.target.classList.contains('form-popup-container') || e.target.classList.contains('fas')) {
 				closeFormPopup();
 			}
@@ -716,7 +700,7 @@ $(document).ready(function () {
 
 	function checkEmail() {
 		let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		emailCheck.forEach(item => {
+		emailCheck.forEach(function(item){
 			if (re.test(item.value) == false) {
 				item.classList.add('error');
 				item.classList.remove('success');
@@ -729,7 +713,7 @@ $(document).ready(function () {
 
 	function checkTel() {
 		const regexTel = /^\+375\-+(25|29|33|44)-+([0-9]){7}$/;
-		phoneCheck.forEach(item => {
+		phoneCheck.forEach(function(item) {
 			if (regexTel.test(item.value) == false) {
 				item.classList.remove('success');
 				item.classList.add('error');
@@ -740,8 +724,8 @@ $(document).ready(function () {
 		})
 	}
 
-	requiredInputs.forEach(item => {
-		item.addEventListener('keyup', () => {
+	requiredInputs.forEach(function(item){
+		item.addEventListener('keyup', function() {
 			if (item.value == 0) {
 				item.classList.remove('success');
 				item.classList.add('error');
@@ -751,22 +735,22 @@ $(document).ready(function () {
 			}
 		})
 	})
-	emailCheck.forEach(el => {
+	emailCheck.forEach(function(el){
 		el.addEventListener('keyup', checkEmail);
 	});
-	emailCheck.forEach(el => {
+	emailCheck.forEach(function(el){
 		el.addEventListener('change', checkEmail);
 	});
-	phoneCheck.forEach(el => {
+	phoneCheck.forEach(function(el){
 		el.addEventListener('keyup', checkTel);
 	})
-	phoneCheck.forEach(el => {
+	phoneCheck.forEach(function(el){
 		el.addEventListener('change', checkTel);
 	})
 
 
 	function checkRequired() {
-		requiredInputs.forEach(item => {
+		requiredInputs.forEach(function(item){
 			if (item.value == 0) {
 				item.classList.remove('success');
 				item.classList.add('error');
@@ -778,7 +762,7 @@ $(document).ready(function () {
 	}
 
 	function formReset() {
-		inputs.forEach(item => {
+		inputs.forEach(function(item){
 			item.classList.remove('success');
 			item.classList.remove('error');
 			item.value = '';
@@ -797,9 +781,9 @@ $(document).ready(function () {
 		checkEmail();
 		checkTel();
 		let classArr = [];
-		inputs.forEach(item => {
+		inputs.forEach(function(item) {
 			let classes = item.className.split(' ')
-			classes.forEach(el => {
+			classes.forEach(function(el) {
 				classArr.push(el);
 			})
 		})
