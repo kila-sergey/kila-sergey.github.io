@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.34c25785.chunk.css",
-    "main.js": "/static/js/main.88a047c0.chunk.js",
-    "main.js.map": "/static/js/main.88a047c0.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.6d5dcfbf.js",
-    "runtime~main.js.map": "/static/js/runtime~main.6d5dcfbf.js.map",
-    "static/css/2.e6ae24df.chunk.css": "/static/css/2.e6ae24df.chunk.css",
-    "static/js/2.a06dea0a.chunk.js": "/static/js/2.a06dea0a.chunk.js",
-    "static/js/2.a06dea0a.chunk.js.map": "/static/js/2.a06dea0a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a297394eecc340128021ca02e876ad69.js": "/precache-manifest.a297394eecc340128021ca02e876ad69.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.e6ae24df.chunk.css.map": "/static/css/2.e6ae24df.chunk.css.map",
-    "static/css/main.34c25785.chunk.css.map": "/static/css/main.34c25785.chunk.css.map",
-    "static/media/all.css": "/static/media/fa-solid-900.fdc155d5.svg"
+    "main.css": "/quote-machine/static/css/main.34c25785.chunk.css",
+    "main.js": "/quote-machine/static/js/main.88a047c0.chunk.js",
+    "main.js.map": "/quote-machine/static/js/main.88a047c0.chunk.js.map",
+    "runtime~main.js": "/quote-machine/static/js/runtime~main.55c97968.js",
+    "runtime~main.js.map": "/quote-machine/static/js/runtime~main.55c97968.js.map",
+    "static/css/2.f5e1a5cb.chunk.css": "/quote-machine/static/css/2.f5e1a5cb.chunk.css",
+    "static/js/2.a06dea0a.chunk.js": "/quote-machine/static/js/2.a06dea0a.chunk.js",
+    "static/js/2.a06dea0a.chunk.js.map": "/quote-machine/static/js/2.a06dea0a.chunk.js.map",
+    "index.html": "/quote-machine/index.html",
+    "precache-manifest.94432466b30686831331a97bd1c85fbd.js": "/quote-machine/precache-manifest.94432466b30686831331a97bd1c85fbd.js",
+    "service-worker.js": "/quote-machine/service-worker.js",
+    "static/css/2.f5e1a5cb.chunk.css.map": "/quote-machine/static/css/2.f5e1a5cb.chunk.css.map",
+    "static/css/main.34c25785.chunk.css.map": "/quote-machine/static/css/main.34c25785.chunk.css.map",
+    "static/media/all.css": "/quote-machine/static/media/fa-solid-900.fdc155d5.svg"
   }
 }
